@@ -3,10 +3,11 @@ import ReactDOM from "react-dom"
 import "./index.scss"
 import App from "./App"
 import reportWebVitals from "./reportWebVitals"
+import FullBackSpinner from "./views/components/FullBackSpinner"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback={<p>Loading...</p>}>
+    <Suspense fallback={<FullBackSpinner />}>
       <App />
     </Suspense>
   </React.StrictMode>,

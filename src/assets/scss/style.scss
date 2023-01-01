@@ -1,1 +1,3 @@
-@use "~bootstrap/scss/bootstrap.scss";
+@import "./variables";
+@import "./base/bootstrap.scss";
+@import "./Components/fullback-spinner.scss";
