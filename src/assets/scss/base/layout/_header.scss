@@ -5,5 +5,34 @@
   height: 5em;
   min-width: 30em;
   padding-bottom: 0em;
-  background-color: $secondary;
+  border-radius: 0 0 40% 40%;
+  background: linear-gradient(to bottom, #65dfc9, $light);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  &__title {
+    font-size: 1.5em;
+    text-align: center;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+  .header {
+    min-width: 20em;
+    &__title {
+      font-size: 1.2em;
+    }
+  }
+}
+
+$breakpoint-phone: 576px;
+@media (max-width: $breakpoint-phone) {
+  .header {
+    min-width: 12em;
+    &__title {
+      font-size: 0.9em;
+    }
+  }
 }

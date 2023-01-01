@@ -1,7 +1,13 @@
-import React from "react"
+import { Link } from "react-router-dom"
 
 const Header = () => {
-  return <div className="header">Header</div>
+  return (
+    <header className="header">
+      <Link className="header__title" to="/users">
+        Users Tasks Management
+      </Link>
+    </header>
+  )
 }
 
 export default Header
