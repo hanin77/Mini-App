@@ -6,11 +6,7 @@
 .user-card {
   flex-grow: 1;
   display: flex;
-  background: linear-gradient(
-    to left top,
-    rgba(255, 213, 87, 0.8),
-    rgba(230, 155, 255, 0.5)
-  );
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 1rem;
   margin: 0.5em 0rem;
   padding: 0.3em;
