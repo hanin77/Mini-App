@@ -1,4 +1,6 @@
 .header {
+  position: fixed;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,7 +8,11 @@
   min-width: 30em;
   padding-bottom: 0em;
   border-radius: 0 0 40% 40%;
-  background: linear-gradient(to bottom, #65dfc9, $light);
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  );
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   &__title {
