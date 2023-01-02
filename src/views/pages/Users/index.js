@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react"
 import { Row, Col, Container, Spinner } from "reactstrap"
 import { getUsers } from "../../../services"
