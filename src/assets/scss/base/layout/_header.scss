@@ -17,6 +17,7 @@
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   &__title {
     font-size: 1.5em;
+    font-weight: bold;
     text-align: center;
     &:hover {
       text-decoration: none;
@@ -37,7 +38,8 @@
   .header {
     min-width: 12em;
     &__title {
-      font-size: 0.9em;
+      padding: 0 0.5em;
+      font-size: 1em;
     }
   }
 }
