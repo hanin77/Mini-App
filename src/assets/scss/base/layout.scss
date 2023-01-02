@@ -9,3 +9,27 @@
   min-height: 100vh;
   background: linear-gradient(to right top, lighten(#cf91fb, 10), #6cdbeb);
 }
+
+.circle {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-1 {
+  @extend .circle;
+  top: 5%;
+  right: 9%;
+}
+.circle-2 {
+  @extend .circle;
+  bottom: 5%;
+  left: 10%;
+}

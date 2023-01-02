@@ -6,6 +6,8 @@ const Layout = ({ children }) => {
       <Header />
       <div className="app-content">{children}</div>
       <Footer />
+      <div className="circle-1 d-non d-md-block"></div>
+      <div className="circle-2"></div>
     </div>
   )
 }
