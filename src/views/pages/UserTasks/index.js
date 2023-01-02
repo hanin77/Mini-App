@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { XCircle, CheckCircle } from "react-feather"
 import { useLocation, useParams } from "react-router-dom"
-import { Container, Row, Col, Spinner, Badge } from "reactstrap"
+import { Container, Row, Col, Spinner } from "reactstrap"
 import { getUserTasks } from "../../../services"
 import TaskCard from "./TaskCard"
 
@@ -44,22 +44,16 @@ const UserTasks = () => {
         <>
           <Col className="d-none d-sm-flex">
             <Col sm="6" className="text-center">
-              <Badge className="mb-1" color="light">
-                <CheckCircle color="#6fbe64" size={37} />
-              </Badge>
+              <CheckCircle color="#6fbe64" size={37} />
             </Col>
             <Col sm="6" className="text-center">
-              <Badge className="mb-1" color="light">
-                <XCircle color="#E63462" size={37} />
-              </Badge>
+              <XCircle color="#E63462" size={37} />
             </Col>
           </Col>
-          <Col className="tasks-list d-flex flex-wrap mb-1">
+          <Col className="tasks-list d-flex flex-wrap my-2">
             <Col sm="6">
-              <Col sm="12" className="text-center d-sm-none">
-                <Badge className="mb-1" color="light">
-                  <CheckCircle color="#6fbe64" size={37} />
-                </Badge>
+              <Col sm="12" className="text-center d-sm-none mb-2">
+                <CheckCircle color="#6fbe64" size={37} />
               </Col>
               {tasks
                 .filter((task) => task.completed)
@@ -74,10 +68,8 @@ const UserTasks = () => {
                 })}
             </Col>
             <Col sm="6">
-              <Col sm="12" className="text-center d-sm-none">
-                <Badge className="mb-1" color="light">
-                  <XCircle color="#E63462" size={37} />
-                </Badge>
+              <Col sm="12" className="text-center d-sm-none mb-2">
+                <XCircle color="#E63462" size={37} />
               </Col>
               {tasks
                 .filter((task) => !task.completed)
