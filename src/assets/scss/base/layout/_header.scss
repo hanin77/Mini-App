@@ -23,7 +23,7 @@
     }
   }
 }
-$breakpoint-tablet: 768px;
+//** media queries
 @media (max-width: $breakpoint-tablet) {
   .header {
     min-width: 20em;
@@ -33,7 +33,6 @@ $breakpoint-tablet: 768px;
   }
 }
 
-$breakpoint-phone: 576px;
 @media (max-width: $breakpoint-phone) {
   .header {
     min-width: 12em;

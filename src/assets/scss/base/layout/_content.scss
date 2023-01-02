@@ -19,14 +19,12 @@
   display: flex;
 }
 
-$breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
   .app-content {
     width: 80%;
   }
 }
 
-$breakpoint-phone: 576px;
 @media (max-width: $breakpoint-phone) {
   .app-content {
     width: 90%;
