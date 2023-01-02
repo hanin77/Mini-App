@@ -1,7 +1,34 @@
 .app-content {
-  margin-bottom: auto;
   justify-self: stretch;
   padding-left: 1em;
   padding-top: 2em;
   padding-right: 1em;
+  flex-grow: 1;
+  margin-top: 7em;
+  background: white;
+  min-height: 62vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+  .app-content {
+    width: 80%;
+  }
+}
+
+$breakpoint-phone: 576px;
+@media (max-width: $breakpoint-phone) {
+  .app-content {
+    width: 90%;
+  }
 }
