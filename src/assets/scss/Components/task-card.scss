@@ -1,0 +1,28 @@
+.tasks-list {
+  max-height: 54vh;
+  margin-bottom: 10px;
+  overflow-y: auto;
+}
+.task-card {
+  margin-bottom: 0.3em;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  ) !important;
+  transform: scale(1);
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid #bf9e66 !important;
+  }
+}
+//media query disable scroll-y on small devices
+
+@media (max-width: $breakpoint-phone) {
+  .tasks-list {
+    max-height: none;
+    overflow-y: visible;
+  }
+}
