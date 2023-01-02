@@ -4,7 +4,10 @@ import PropTypes from "prop-types"
 import { Link } from "react-router-dom"
 const UserCard = ({ user }) => {
   return (
-    <Link className="text-decoration-none" to={`/users/${user.id}/tasks`}>
+    <Link
+      className="text-decoration-none"
+      to={{ pathname: `/users/${user.id}/tasks`, state: { ...user } }}
+    >
       <div className="user-card">
         <img src={defaultAvatar} alt="" />
         <div className="d-flex flex-column justify-content-space-between">

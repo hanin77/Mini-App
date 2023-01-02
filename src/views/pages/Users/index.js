@@ -29,7 +29,7 @@ const Users = () => {
         <Col className="users-list" lg="7" md="12">
           {loading && (
             <Row className="justify-content-center mt-1">
-              <Spinner type="border" color="secondary" children={false} />
+              <Spinner type="border" color="secondary" children="" />
             </Row>
           )}
           {!!data.length &&
