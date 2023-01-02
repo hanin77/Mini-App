@@ -1,0 +1,41 @@
+.users-list {
+  max-height: 62vh;
+  margin-bottom: 10px;
+  overflow-y: auto;
+}
+.user-card {
+  flex-grow: 1;
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 213, 87, 0.8),
+    rgba(230, 155, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 0.5em 0rem;
+  padding: 0.3em;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: flex-start;
+  transform: scale(1);
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid #bf9e66 !important;
+  }
+  & img {
+    width: 4em;
+    height: 4em;
+    margin-right: 0.5em;
+    border-radius: 50%;
+  }
+}
+
+//media query disable scroll-y on small devices
+
+@media (max-width: $breakpoint-phone) {
+  .users-list {
+    max-height: none;
+    overflow-y: visible;
+  }
+}
